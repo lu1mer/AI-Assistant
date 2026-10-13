@@ -1,0 +1,15 @@
+{
+  "scope": "All remaining Git text objects and PNG text metadata, including unreachable objects after history scrub/GC; raw key checked in every blob",
+  "objects_checked": 196,
+  "png_metadata_checked": 16,
+  "findings": {
+    "actual_key": 0,
+    "credential_pattern": 0,
+    "personal_alias": 0,
+    "personal_user_path": 0,
+    "non_generic_email": 0,
+    "credential_arrays_in_logs": 0
+  },
+  "history_rewritten": true,
+  "embedded_key": "Obfuscated source required by assignment; recoverable from client; plaintext/encoded credential arrays excluded from logs"
+}

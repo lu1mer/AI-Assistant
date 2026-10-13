@@ -1,0 +1,9 @@
+build/
+*.xcodeproj/
+.DS_Store
+*.xcresult/
+*.xcuserstate
+.env*
+*.key
+secrets/
+__pycache__/

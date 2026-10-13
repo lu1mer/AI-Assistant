@@ -1,0 +1,69 @@
+name: AIAssistant
+options:
+  minimumXcodeGenVersion: 2.42.0
+  deploymentTarget:
+    iOS: '18.0'
+settings:
+  base:
+    SWIFT_VERSION: '6.0'
+    SWIFT_STRICT_CONCURRENCY: complete
+    IPHONEOS_DEPLOYMENT_TARGET: '18.0'
+    TARGETED_DEVICE_FAMILY: '1'
+    CODE_SIGN_STYLE: Automatic
+    GENERATE_INFOPLIST_FILE: YES
+    MARKETING_VERSION: '1.0'
+    CURRENT_PROJECT_VERSION: '1'
+targets:
+  AIAssistant:
+    type: application
+    platform: iOS
+    sources: [Sources]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.AIAssistant
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_CFBundleDisplayName: 'Aster'
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+  AIAssistantTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [Tests]
+    dependencies:
+      - target: AIAssistant
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.AIAssistant.tests
+  AIAssistantUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [UITests]
+    dependencies:
+      - target: AIAssistant
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.AIAssistant.uitests
+  AIAssistantLiveUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [LiveUITests]
+    dependencies:
+      - target: AIAssistant
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.AIAssistant.liveuitests
+schemes:
+  AIAssistant:
+    build:
+      targets:
+        AIAssistant: all
+    test:
+      targets: [AIAssistantTests, AIAssistantUITests]
+      gatherCoverageData: true
+  LiveAI:
+    build:
+      targets:
+        AIAssistant: all
+    test:
+      targets: [AIAssistantLiveUITests]

@@ -1,0 +1,12 @@
+{
+  "exported_at": "2026-10-05T21:00:22.317757+00:00",
+  "source": "Native Codex session JSONL for this task only",
+  "records": 574,
+  "models": [
+    "gpt-6-astra",
+    "gpt-6.1-sol"
+  ],
+  "included": "User/assistant visible messages and tool calls/results",
+  "excluded": "Internal reasoning, system/developer messages, environment metadata and usage telemetry",
+  "redacted": "Home/project paths, account name, email addresses, credential patterns and image base64"
+}

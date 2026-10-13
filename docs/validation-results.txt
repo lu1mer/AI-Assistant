@@ -1,0 +1,62 @@
+tests-verified.log
+2026-10-05 17:41:35.189 appintentsmetadataprocessor[41771:9074418] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+2026-10-05 17:41:35.537 appintentsmetadataprocessor[41774:9074434] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+2026-10-05 17:41:36.749 appintentsmetadataprocessor[41781:9074482] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+Test Case '-[AIAssistantTests.ChatViewModelTests testDifferentConversationsStayIndependent]' passed (0.033 seconds).
+Test Case '-[AIAssistantTests.ChatViewModelTests testRetryReplacesPartialWithoutDuplicateUser]' passed (0.022 seconds).
+Test Case '-[AIAssistantTests.ChatViewModelTests testStopPreservesPartialAndRejectsOldChunks]' passed (0.021 seconds).
+Test Case '-[AIAssistantTests.ChatViewModelTests testStorageFailurePreventsNetworkAndCanSaveAgain]' passed (0.006 seconds).
+Test Case '-[AIAssistantTests.ChatViewModelTests testStreamingSavedAndFollowupSendsHistory]' passed (0.021 seconds).
+Test Case '-[AIAssistantTests.ChatViewModelTests testWhitespaceAndDuplicateSendsPrevented]' passed (0.007 seconds).
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.109 (0.113) seconds
+Test Case '-[AIAssistantTests.GroqAIServiceTests testActualClientDecodesStreamingBytes]' passed (0.047 seconds).
+Test Case '-[AIAssistantTests.GroqAIServiceTests testConsumerCancellationStopsNetworkTransport]' passed (0.013 seconds).
+Test Case '-[AIAssistantTests.GroqAIServiceTests testHTTPMalformedTruncatedAndOfflineFailures]' passed (0.007 seconds).
+Test Case '-[AIAssistantTests.GroqAIServiceTests testMissingCredentialFailsExplicitly]' passed (0.001 seconds).
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.067 (0.068) seconds
+Test Case '-[AIAssistantTests.PersistenceTests testDiskReopenRecoveryOrderingAndDeletion]' passed (0.071 seconds).
+Test Case '-[AIAssistantTests.SSEDecoderTests testChunkContentAndMetadata]' passed (0.001 seconds).
+Test Case '-[AIAssistantTests.SSEDecoderTests testCRDelimitersAndIncompleteEventNotEmitted]' passed (0.001 seconds).
+Test Case '-[AIAssistantTests.SSEDecoderTests testErrorMapping]' passed (0.001 seconds).
+Test Case '-[AIAssistantTests.SSEDecoderTests testInvalidUTF8Rejected]' passed (0.001 seconds).
+Test Case '-[AIAssistantTests.SSEDecoderTests testMalformedAndInBandErrors]' passed (0.002 seconds).
+Test Case '-[AIAssistantTests.SSEDecoderTests testMultilineDataAndUnknownFields]' passed (0.001 seconds).
+Test Case '-[AIAssistantTests.SSEDecoderTests testOversizedLineRejected]' passed (0.170 seconds).
+Test Case '-[AIAssistantTests.SSEDecoderTests testUTF8SplitBytesCRLFAndComments]' passed (0.001 seconds).
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.177 (0.180) seconds
+	 Executed 19 tests, with 0 failures (0 unexpected) in 0.425 (0.433) seconds
+	 Executed 19 tests, with 0 failures (0 unexpected) in 0.425 (0.434) seconds
+Test Case '-[AIAssistantUITests.ChatFlowTests testDeleteConversation]' passed (21.595 seconds).
+Test Case '-[AIAssistantUITests.ChatFlowTests testEmptyAndLongHistory]' passed (16.874 seconds).
+Test Case '-[AIAssistantUITests.ChatFlowTests testSendRestartAndSecondConversation]' passed (34.734 seconds).
+Test Case '-[AIAssistantUITests.ChatFlowTests testStopAndRetryOfflineWithoutDuplicatePrompt]' passed (21.117 seconds).
+	 Executed 4 tests, with 0 failures (0 unexpected) in 94.321 (94.334) seconds
+	 Executed 4 tests, with 0 failures (0 unexpected) in 94.321 (94.338) seconds
+	 Executed 4 tests, with 0 failures (0 unexpected) in 94.321 (94.340) seconds
+** TEST SUCCEEDED **
+SUCCESS: Tests passed.
+
+clean-build.log
+2026-10-05 18:57:07.461 appintentsmetadataprocessor[43909:9120242] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+** BUILD SUCCEEDED **
+SUCCESS: <PROJECT>/build/DerivedData/Build/Products/Debug-iphonesimulator/AIAssistant.app
+
+release-build.log
+2026-10-05 17:39:46.970 appintentsmetadataprocessor[41609:9068981] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+** BUILD SUCCEEDED **
+
+
+OpenRouter migration:
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.234 (0.237) seconds
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.061 (0.063) seconds
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.094 (0.095) seconds
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.174 (0.176) seconds
+	 Executed 20 tests, with 0 failures (0 unexpected) in 0.563 (0.571) seconds
+	 Executed 20 tests, with 0 failures (0 unexpected) in 0.563 (0.573) seconds
+** TEST SUCCEEDED **
+
+Final audit 2026-10-05 Moscow: 20 unit + 4 UI passed; separate LiveAI real API scenario passed; new accessibility/landscape UI test passed after composer fix; Release build passed; minimum18.0; quota47/50, paid daily usage0. iOS18.5 runtime download unavailable (arm64/universal).
+
+Final ZIP extracted into a clean directory; its Build.command ran from /private/tmp and succeeded. Extracted Git fsck passed, executable bits preserved. Final tracked-file privacy scan found no plaintext credential or personal home path.
+
+Final current ZIP extracted into a new directory; Build.command ran from /private/tmp and succeeded. Extracted Git fsck and full-object privacy audit passed with zero findings. Source tests/builds described above remain valid; final packaging changes only documentation/log export.
